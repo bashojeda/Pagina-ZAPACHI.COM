@@ -1,0 +1,457 @@
+/* Estilos base (para móviles primero) */
+body {
+    background-color: #555c5d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column; /* Cambia a columna en móviles */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.logo {
+    width: 80px; /* Tamaño más pequeño para móviles */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Cambia a columna en móviles */
+    align-items: center;
+}
+
+.menu ul li {
+    margin: 5px 0; /* Espaciado vertical en móviles */
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de fuente más pequeño para móviles */
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.menu ul li a:hover {
+    background-color: #b5b5b5;
+    border-radius: 5px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Altura reducida para móviles */
+    text-align: center;
+    color: white;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 8px 16px; /* Padding reducido para móviles */
+    margin: 5px;
+    font-size: 14px; /* Tamaño de fuente más pequeño para móviles */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    background-color: #b5b5b5;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Cambia a columna en móviles */
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; /* Ancho casi completo en móviles */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Efecto más sutil en móviles */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.producto h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.producto p {
+    font-size: 14px;
+    color: #555;
+}
+
+.articulo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Cambia a columna en móviles */
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.articulo img {
+    width: 100%; /* Imagen ocupa todo el ancho en móviles */
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.detalles {
+    width: 100%; /* Ancho completo en móviles */
+    text-align: center;
+}
+
+.detalles h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.detalles h3 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.detalles h2 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.tallas {
+    margin-bottom: 20px;
+}
+
+.tallas p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tallas button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tallas button:hover {
+    background-color: #b5b5b5;
+}
+
+.botones button {
+    padding: 12px 16px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.botones .agregar {
+    background-color: #000;
+    color: white;
+    border: none;
+}
+
+.botones .favoritos {
+    background-color: white;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.envio {
+    font-size: 14px;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 12px;
+    color: #555;
+}
+
+.info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 90vh; /* Ocupa casi toda la pantalla sin afectar el menú */
+    text-align: center;
+    color: white; /* Color de texto para contraste */
+
+
+    padding-left: 10%; /* Agrega espacio a la izquierda */
+    padding-right: 10%; /* Agrega espacio a la derecha */
+}
+
+/*********************** CONTACTO    F     ******************************************/
+
+/* Estilos Generales para toda la página */
+.contacto body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.contacto h1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white; /* Color de texto para contraste */
+}
+
+/* Estilos para la sección de Contacto */
+.contacto {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+/* Contenedor principal de la sección de contacto */
+.contacto .contact-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos del Formulario de Contacto */
+.contacto .contact-form {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto .contact-form h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contacto .contact-form input, 
+.contacto .contact-form select, 
+.contacto .contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto .contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contacto .contact-form button:hover {
+    background-color: #555;
+}
+
+/* Estilos de la Información de Contacto */
+.contacto .contact-info {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto .contact-info h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contacto .contact-info p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.contacto .contact-info h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilos de las Redes Sociales */
+.contacto .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contacto .social-links a:hover {
+    color: #007BFF;
+}
+
+/* Estilos para el Mapa */
+.contacto iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+    .menu {
+        flex-direction: row; 
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 0;
+    }
+
+    .menu ul {
+        flex-direction: row;
+    }
+
+    .menu ul li {
+        margin-left: 15px;
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+
+    .contenedor {
+        height: 90vh;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .productos {
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .producto {
+        width: 300px;
+    }
+
+    .articulo {
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .articulo img {
+        width: 40%;
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .detalles {
+        width: 50%;
+        text-align: left;
+    }
+
+    .detalles h1 {
+        font-size: 28px;
+    }
+
+    .detalles h3 {
+        font-size: 18px;
+    }
+
+    .detalles h2 {
+        font-size: 24px;
+    }
+
+    .tallas p {
+        font-size: 16px;
+    }
+
+    .tallas button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .botones button {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .envio {
+        font-size: 16px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+}
